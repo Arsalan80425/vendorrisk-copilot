@@ -70,6 +70,8 @@ class HealthResponse(BaseModel):
     model_exists: bool
     rag_index_exists: bool
     features_exists: bool
+    deployment_mode: str
+    lightweight_ready: bool
 
 
 class VendorListItem(BaseModel):

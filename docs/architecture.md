@@ -138,7 +138,7 @@ The pipeline calls validation internally and prints a summary so operators see d
 
 ### Drift Monitoring
 
-`monitor_drift()` compares current features to the training baseline and writes `artifacts/reports/drift_report.json`.
+`monitor_drift()` compares `data/processed/vendor_features.csv` to the training baseline and writes `artifacts/model/latest_drift_report.json`.
 
 ---
 
@@ -297,7 +297,7 @@ Containers run the serving layer only. Operators generate artifacts on the host 
 | `data/processed/vendor_features.csv` | `build_features` | ML, API, dashboard |
 | `artifacts/model/vendor_risk_model.joblib` | `train_model` | `predict_risk`, workflow |
 | `artifacts/faiss/contracts.index` | `ingest_contracts` | `retrieve_clauses`, workflow |
-| `artifacts/reports/drift_report.json` | `monitor_drift` | Ops / model review |
+| `artifacts/model/latest_drift_report.json` | `monitor_drift` | Ops / model review |
 | `mlruns/` | `train_model` | MLflow UI |
 | Automation payload JSON | LangGraph workflow | n8n, webhooks, ticketing |
 

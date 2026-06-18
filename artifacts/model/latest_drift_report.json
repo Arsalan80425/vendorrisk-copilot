@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-06-18T06:36:09.186582+00:00",
+  "baseline_path": "C:\\Users\\arsal\\Desktop\\VendorRisk Copilot\\vendorrisk-copilot\\artifacts\\model\\training_baseline.json",
+  "features_path": "C:\\Users\\arsal\\Desktop\\VendorRisk Copilot\\vendorrisk-copilot\\data\\processed\\vendor_features.csv",
+  "drift_detected": false,
+  "metrics": [
+    {
+      "metric": "pending_invoice_amount",
+      "baseline_value": 61099.0,
+      "current_value": 61099.0,
+      "percent_change": 0.0,
+      "threshold_percent": 30.0,
+      "drift_detected": false
+    },
+    {
+      "metric": "sla_breach_rate",
+      "baseline_value": 0.25,
+      "current_value": 0.25,
+      "percent_change": 0.0,
+      "threshold_percent": 20.0,
+      "drift_detected": false
+    },
+    {
+      "metric": "compliance_missing_flag",
+      "baseline_value": 0.32,
+      "current_value": 0.32,
+      "percent_change": 0.0,
+      "threshold_percent": 20.0,
+      "drift_detected": false
+    },
+    {
+      "metric": "duplicate_invoice_count",
+      "baseline_value": 0.08,
+      "current_value": 0.08,
+      "percent_change": 0.0,
+      "threshold_percent": 30.0,
+      "drift_detected": false
+    }
+  ]
+}

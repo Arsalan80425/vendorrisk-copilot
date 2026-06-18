@@ -1,11 +1,19 @@
 """Central path and environment configuration for VendorRisk Copilot."""
 
+import os
 from pathlib import Path
 
 from dotenv import load_dotenv
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 load_dotenv(BASE_DIR / ".env")
+
+DEPLOYMENT_MODE = os.environ.get("DEPLOYMENT_MODE", "full").strip().lower()
+
+
+def is_lightweight_mode() -> bool:
+    """Return True when the API should avoid heavy ML/RAG dependencies."""
+    return DEPLOYMENT_MODE == "lightweight"
 
 DATA_DIR = BASE_DIR / "data"
 RAW_DATA_DIR = DATA_DIR / "raw"
@@ -20,6 +28,9 @@ MLRUNS_DIR = BASE_DIR / "mlruns"
 
 VENDOR_FEATURES_PATH = PROCESSED_DATA_DIR / "vendor_features.csv"
 MODEL_PATH = MODEL_DIR / "vendor_risk_model.joblib"
+FEATURE_NAMES_PATH = MODEL_DIR / "feature_names.json"
+INDEX_PATH = FAISS_DIR / "contracts.index"
+LATEST_DRIFT_REPORT_PATH = MODEL_DIR / "latest_drift_report.json"
 
 RISK_LEVEL_THRESHOLDS = {
     "high": 70.0,

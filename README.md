@@ -153,8 +153,11 @@ uvicorn src.api.main:app --reload
 # Start dashboard (separate terminal)
 streamlit run dashboard/app.py
 
-# Inspect MLflow runs
-mlflow ui
+# Inspect MLflow runs (MLflow 3+ requires this for the local ./mlruns file store)
+# PowerShell:
+$env:MLFLOW_ALLOW_FILE_STORE="true"; mlflow ui
+# bash:
+# MLFLOW_ALLOW_FILE_STORE=true mlflow ui
 ```
 
 Additional CLI utilities:
@@ -167,6 +170,34 @@ python -m src.agents.vendor_workflow --vendor-id V001
 ```
 
 API docs: `http://127.0.0.1:8000/docs`
+
+## MLOps & Monitoring
+
+Train vendor risk models with MLflow tracking, persist the champion artifact, and monitor feature drift locally.
+
+```bash
+python -m src.pipelines.build_features
+python -m src.ml.train_model
+python -m src.ml.monitor_drift
+```
+
+| Step | Command / output | Purpose |
+| --- | --- | --- |
+| Train | `python -m src.ml.train_model` | Trains LogisticRegression and RandomForestClassifier, logs runs to `./mlruns`, saves best model by F1 |
+| Track | `mlflow ui` (with `MLFLOW_ALLOW_FILE_STORE=true`) | Compare parameters, metrics, and artifacts across runs |
+| Score | `python -m src.ml.predict_risk --vendor-id V001` | Load `artifacts/model/vendor_risk_model.joblib` |
+| Drift | `python -m src.ml.monitor_drift` | Compare `data/processed/vendor_features.csv` to `artifacts/model/training_baseline.json` |
+
+**Artifacts written by training:**
+
+- `artifacts/model/vendor_risk_model.joblib` — champion model
+- `artifacts/model/feature_names.json` — input feature list
+- `artifacts/model/training_baseline.json` — feature means for drift checks
+- `mlruns/` — MLflow experiment history
+
+**Drift report:** `artifacts/model/latest_drift_report.json`
+
+Full walkthrough: [docs/mlops.md](docs/mlops.md)
 
 ## Docker Run Commands
 
@@ -186,6 +217,47 @@ docker compose up --build
 | MLflow UI | `http://127.0.0.1:5000` |
 
 `docker-compose.yml` mounts `./data`, `./artifacts`, and `./mlruns` so outputs persist between container restarts.
+
+## Render Deployment (Free Tier)
+
+The API supports a **lightweight** deployment mode for memory-constrained hosts such as Render Free. Lightweight mode uses rule-based scoring and keyword contract retrieval only — no torch, sentence-transformers, FAISS, MLflow, or joblib model loading.
+
+**Environment variables (Render dashboard):**
+
+| Variable | Value |
+| --- | --- |
+| `DEPLOYMENT_MODE` | `lightweight` |
+| `ENABLE_LLM_ON_RENDER` | `false` |
+| `LLM_PROVIDER` | `none` |
+
+**Build command:**
+
+```bash
+pip install -r requirements-render.txt
+```
+
+**Start command:**
+
+```bash
+uvicorn src.api.main:app --host 0.0.0.0 --port $PORT
+```
+
+**Required committed data (no `artifacts/` needed in lightweight mode):**
+
+- `data/processed/vendor_features.csv`
+- `data/contracts/*.txt`
+
+**Verify after deploy:**
+
+```bash
+curl https://your-service.onrender.com/health
+curl https://your-service.onrender.com/debug-files
+curl -X POST https://your-service.onrender.com/analyze-vendor \
+  -H "Content-Type: application/json" \
+  -d "{\"vendor_id\":\"V001\"}"
+```
+
+Local development continues to use `DEPLOYMENT_MODE=full` (default) with the full `requirements.txt` stack and ML/RAG artifacts.
 
 ## API Examples
 
@@ -300,3 +372,4 @@ Full copy-paste variants (1-line, 3-bullet, 6-bullet, LinkedIn post, GitHub desc
 | [docs/demo_script.md](docs/demo_script.md) | 3-minute live demo script |
 | [docs/resume_bullets.md](docs/resume_bullets.md) | Resume and social copy variants |
 | [docs/n8n_setup.md](docs/n8n_setup.md) | n8n import and webhook configuration |
+| [docs/mlops.md](docs/mlops.md) | Training pipeline, MLflow tracking, drift monitoring |

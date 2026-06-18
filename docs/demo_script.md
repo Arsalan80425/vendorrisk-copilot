@@ -92,7 +92,7 @@ Trace: **Manual Trigger → Set Vendor → HTTP Request → IF High Risk → Sla
 
 ### 2:25 — Show MLflow run `[Step 9]`
 
-Open `http://127.0.0.1:5000` (or `mlflow ui` locally).
+Open `http://127.0.0.1:5000` (or `$env:MLFLOW_ALLOW_FILE_STORE="true"; mlflow ui` locally on PowerShell).
 
 > "Training compares LogisticRegression and RandomForest, logs metrics to MLflow, and persists the best model by F1. That gives us experiment history and a path to drift monitoring — not just a pickle file on someone's laptop."
 

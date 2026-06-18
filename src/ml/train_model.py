@@ -13,7 +13,15 @@ import joblib
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_score, roc_auc_score
+from sklearn.metrics import (
+    accuracy_score,
+    classification_report,
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
 from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
@@ -24,6 +32,9 @@ from src.pipelines.build_features import build_features
 FEATURE_NAMES_PATH = MODEL_DIR / "feature_names.json"
 TRAINING_BASELINE_PATH = MODEL_DIR / "training_baseline.json"
 MODEL_RESULTS_PATH = MODEL_DIR / "model_results.json"
+
+RANDOM_STATE = 42
+TEST_SIZE = 0.3
 
 FEATURE_COLUMNS = [
     "total_spend",
@@ -72,9 +83,21 @@ def _target_series(features: pd.DataFrame) -> pd.Series:
 def _split_data(X: pd.DataFrame, y: pd.Series) -> tuple[pd.DataFrame, pd.DataFrame, pd.Series, pd.Series]:
     stratify = y if y.value_counts().min() >= 2 else None
     try:
-        return train_test_split(X, y, test_size=0.3, random_state=42, stratify=stratify)
+        return train_test_split(
+            X,
+            y,
+            test_size=TEST_SIZE,
+            random_state=RANDOM_STATE,
+            stratify=stratify,
+        )
     except ValueError:
-        return train_test_split(X, y, test_size=0.3, random_state=42, stratify=None)
+        return train_test_split(
+            X,
+            y,
+            test_size=TEST_SIZE,
+            random_state=RANDOM_STATE,
+            stratify=None,
+        )
 
 
 def _models() -> dict[str, Any]:
@@ -87,7 +110,7 @@ def _models() -> dict[str, Any]:
                     LogisticRegression(
                         class_weight="balanced",
                         max_iter=1000,
-                        random_state=42,
+                        random_state=RANDOM_STATE,
                     ),
                 ),
             ]
@@ -97,7 +120,7 @@ def _models() -> dict[str, Any]:
             max_depth=6,
             min_samples_leaf=1,
             class_weight="balanced",
-            random_state=42,
+            random_state=RANDOM_STATE,
         ),
     }
 
@@ -115,7 +138,11 @@ def _positive_scores(model: Any, X: pd.DataFrame) -> list[float] | None:
     return None
 
 
-def _evaluate_model(model: Any, X_test: pd.DataFrame, y_test: pd.Series) -> dict[str, float | None]:
+def _evaluate_model(
+    model: Any,
+    X_test: pd.DataFrame,
+    y_test: pd.Series,
+) -> tuple[dict[str, float | None], Any]:
     predictions = model.predict(X_test)
     scores = _positive_scores(model, X_test)
     metrics: dict[str, float | None] = {
@@ -127,10 +154,27 @@ def _evaluate_model(model: Any, X_test: pd.DataFrame, y_test: pd.Series) -> dict
     }
     if scores is not None and y_test.nunique() > 1:
         metrics["roc_auc"] = round(float(roc_auc_score(y_test, scores)), 4)
-    return metrics
+    return metrics, predictions
 
 
-def _log_to_mlflow(model_name: str, model: Any, metrics: dict[str, float | None], params: dict[str, Any]) -> None:
+def _run_params(model_type: str, train_size: int, test_size: int) -> dict[str, Any]:
+    return {
+        "model_type": model_type,
+        "train_size": train_size,
+        "test_size": test_size,
+        "feature_count": len(FEATURE_COLUMNS),
+        "random_state": RANDOM_STATE,
+    }
+
+
+def _log_to_mlflow(
+    model_type: str,
+    model: Any,
+    metrics: dict[str, float | None],
+    params: dict[str, Any],
+    y_test: pd.Series,
+    predictions: Any,
+) -> None:
     """Log model run details to MLflow when the dependency is installed."""
     try:
         os.environ.setdefault("MLFLOW_ALLOW_FILE_STORE", "true")
@@ -142,7 +186,7 @@ def _log_to_mlflow(model_name: str, model: Any, metrics: dict[str, float | None]
                 {
                     "reason": "mlflow is not installed in this Python environment",
                     "install": "pip install -r requirements.txt",
-                    "attempted_model": model_name,
+                    "attempted_model": model_type,
                 },
                 indent=2,
             ),
@@ -152,18 +196,27 @@ def _log_to_mlflow(model_name: str, model: Any, metrics: dict[str, float | None]
 
     mlflow.set_tracking_uri(MLRUNS_DIR.as_uri())
     mlflow.set_experiment("vendorrisk-copilot")
-    with mlflow.start_run(run_name=f"vendor-risk-{model_name}"):
-        mlflow.log_param("model_name", model_name)
-        mlflow.log_param("feature_count", len(FEATURE_COLUMNS))
+    with mlflow.start_run(run_name=f"vendor-risk-{model_type}"):
         mlflow.log_params(params)
         for metric_name, metric_value in metrics.items():
             if metric_value is not None:
                 mlflow.log_metric(metric_name, metric_value)
         with TemporaryDirectory() as tmp_dir:
-            feature_path = Path(tmp_dir) / "feature_names.json"
-            feature_path.write_text(json.dumps(FEATURE_COLUMNS, indent=2), encoding="utf-8")
-            mlflow.log_artifact(str(feature_path))
-        mlflow.sklearn.log_model(model, artifact_path="model")
+            tmp_path = Path(tmp_dir)
+            (tmp_path / "feature_names.json").write_text(
+                json.dumps(FEATURE_COLUMNS, indent=2),
+                encoding="utf-8",
+            )
+            (tmp_path / "classification_report.txt").write_text(
+                classification_report(y_test, predictions, zero_division=0),
+                encoding="utf-8",
+            )
+            (tmp_path / "confusion_matrix.json").write_text(
+                json.dumps(confusion_matrix(y_test, predictions).tolist(), indent=2),
+                encoding="utf-8",
+            )
+            mlflow.log_artifacts(str(tmp_path))
+        mlflow.sklearn.log_model(model, name="model")
 
 
 def _model_params(model: Any) -> dict[str, Any]:
@@ -207,20 +260,23 @@ def train_model() -> dict[str, Any]:
     X = _feature_frame(features)
     y = _target_series(features)
     X_train, X_test, y_train, y_test = _split_data(X, y)
+    train_size = len(X_train)
+    test_size = len(X_test)
 
     results: list[dict[str, Any]] = []
     trained_models: dict[str, Any] = {}
-    for model_name, model in _models().items():
+    for model_type, model in _models().items():
         model.fit(X_train, y_train)
-        metrics = _evaluate_model(model, X_test, y_test)
-        params = _model_params(model)
-        _log_to_mlflow(model_name, model, metrics, params)
-        trained_models[model_name] = model
+        metrics, predictions = _evaluate_model(model, X_test, y_test)
+        params = _run_params(model_type, train_size, test_size)
+        _log_to_mlflow(model_type, model, metrics, params, y_test, predictions)
+        trained_models[model_type] = model
         results.append(
             {
-                "model_name": model_name,
+                "model_name": model_type,
                 "metrics": metrics,
-                "parameters": params,
+                "parameters": _model_params(model),
+                "run_params": params,
             }
         )
 
@@ -249,6 +305,7 @@ def train_model() -> dict[str, Any]:
         "model_path": str(MODEL_PATH),
         "feature_names_path": str(FEATURE_NAMES_PATH),
         "training_baseline_path": str(TRAINING_BASELINE_PATH),
+        "mlruns_path": str(MLRUNS_DIR),
     }
 
 
@@ -271,6 +328,7 @@ def _print_summary(summary: dict[str, Any]) -> None:
     print(f"Saved model: {summary['model_path']}")
     print(f"Saved feature list: {summary['feature_names_path']}")
     print(f"Saved training baseline: {summary['training_baseline_path']}")
+    print(f"MLflow runs: {summary['mlruns_path']}")
 
 
 def main() -> None:

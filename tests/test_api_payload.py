@@ -31,6 +31,8 @@ def test_health_and_summary_endpoints():
     summary = client.get("/vendor-risk-summary").json()
 
     assert health["status"] == "ok"
-    assert {"model_exists", "rag_index_exists", "features_exists"}.issubset(health.keys())
+    assert {"model_exists", "rag_index_exists", "features_exists", "deployment_mode", "lightweight_ready"}.issubset(
+        health.keys()
+    )
     assert summary["total_vendors"] >= 1
     assert "total_estimated_exposure" in summary
