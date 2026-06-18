@@ -1,0 +1,7 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "index_path": "C:\\Users\\arsal\\Desktop\\VendorRisk Copilot\\vendorrisk-copilot\\artifacts\\faiss\\contracts.index",
+  "chunks_path": "C:\\Users\\arsal\\Desktop\\VendorRisk Copilot\\vendorrisk-copilot\\artifacts\\faiss\\chunks.json",
+  "chunk_count": 175,
+  "embedding_dimension": 384
+}

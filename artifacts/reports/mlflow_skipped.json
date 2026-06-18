@@ -1,0 +1,5 @@
+{
+  "reason": "mlflow is not installed in this Python environment",
+  "install": "pip install -r requirements.txt",
+  "attempted_model": "RandomForestClassifier"
+}

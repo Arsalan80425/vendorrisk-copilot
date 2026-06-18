@@ -1,0 +1,1402 @@
+[
+  {
+    "chunk_id": 0,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "AdBeacon Network",
+    "contract_file": "adbeacon_network_contract.txt",
+    "clause_type": "payment",
+    "source": "adbeacon_network_contract.txt"
+  },
+  {
+    "chunk_id": 1,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "AdBeacon Network",
+    "contract_file": "adbeacon_network_contract.txt",
+    "clause_type": "sla",
+    "source": "adbeacon_network_contract.txt"
+  },
+  {
+    "chunk_id": 2,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "AdBeacon Network",
+    "contract_file": "adbeacon_network_contract.txt",
+    "clause_type": "compliance",
+    "source": "adbeacon_network_contract.txt"
+  },
+  {
+    "chunk_id": 3,
+    "text": "Renewal Terms: The contract end date is 2026-08-18. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "AdBeacon Network",
+    "contract_file": "adbeacon_network_contract.txt",
+    "clause_type": "renewal",
+    "source": "adbeacon_network_contract.txt"
+  },
+  {
+    "chunk_id": 4,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "AdBeacon Network",
+    "contract_file": "adbeacon_network_contract.txt",
+    "clause_type": "termination",
+    "source": "adbeacon_network_contract.txt"
+  },
+  {
+    "chunk_id": 5,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "AdBeacon Network",
+    "contract_file": "adbeacon_network_contract.txt",
+    "clause_type": "general",
+    "source": "adbeacon_network_contract.txt"
+  },
+  {
+    "chunk_id": 6,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "AdBeacon Network",
+    "contract_file": "adbeacon_network_contract.txt",
+    "clause_type": "general",
+    "source": "adbeacon_network_contract.txt"
+  },
+  {
+    "chunk_id": 7,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "BrandLift Creative",
+    "contract_file": "brandlift_creative_contract.txt",
+    "clause_type": "payment",
+    "source": "brandlift_creative_contract.txt"
+  },
+  {
+    "chunk_id": 8,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "BrandLift Creative",
+    "contract_file": "brandlift_creative_contract.txt",
+    "clause_type": "sla",
+    "source": "brandlift_creative_contract.txt"
+  },
+  {
+    "chunk_id": 9,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "BrandLift Creative",
+    "contract_file": "brandlift_creative_contract.txt",
+    "clause_type": "compliance",
+    "source": "brandlift_creative_contract.txt"
+  },
+  {
+    "chunk_id": 10,
+    "text": "Renewal Terms: The contract end date is 2027-06-30. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "BrandLift Creative",
+    "contract_file": "brandlift_creative_contract.txt",
+    "clause_type": "renewal",
+    "source": "brandlift_creative_contract.txt"
+  },
+  {
+    "chunk_id": 11,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "BrandLift Creative",
+    "contract_file": "brandlift_creative_contract.txt",
+    "clause_type": "termination",
+    "source": "brandlift_creative_contract.txt"
+  },
+  {
+    "chunk_id": 12,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "BrandLift Creative",
+    "contract_file": "brandlift_creative_contract.txt",
+    "clause_type": "general",
+    "source": "brandlift_creative_contract.txt"
+  },
+  {
+    "chunk_id": 13,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "BrandLift Creative",
+    "contract_file": "brandlift_creative_contract.txt",
+    "clause_type": "general",
+    "source": "brandlift_creative_contract.txt"
+  },
+  {
+    "chunk_id": 14,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "CampaignWorks AI",
+    "contract_file": "campaignworks_ai_contract.txt",
+    "clause_type": "payment",
+    "source": "campaignworks_ai_contract.txt"
+  },
+  {
+    "chunk_id": 15,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "CampaignWorks AI",
+    "contract_file": "campaignworks_ai_contract.txt",
+    "clause_type": "sla",
+    "source": "campaignworks_ai_contract.txt"
+  },
+  {
+    "chunk_id": 16,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "CampaignWorks AI",
+    "contract_file": "campaignworks_ai_contract.txt",
+    "clause_type": "compliance",
+    "source": "campaignworks_ai_contract.txt"
+  },
+  {
+    "chunk_id": 17,
+    "text": "Renewal Terms: The contract end date is 2027-08-31. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "CampaignWorks AI",
+    "contract_file": "campaignworks_ai_contract.txt",
+    "clause_type": "renewal",
+    "source": "campaignworks_ai_contract.txt"
+  },
+  {
+    "chunk_id": 18,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "CampaignWorks AI",
+    "contract_file": "campaignworks_ai_contract.txt",
+    "clause_type": "termination",
+    "source": "campaignworks_ai_contract.txt"
+  },
+  {
+    "chunk_id": 19,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "CampaignWorks AI",
+    "contract_file": "campaignworks_ai_contract.txt",
+    "clause_type": "general",
+    "source": "campaignworks_ai_contract.txt"
+  },
+  {
+    "chunk_id": 20,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "CampaignWorks AI",
+    "contract_file": "campaignworks_ai_contract.txt",
+    "clause_type": "general",
+    "source": "campaignworks_ai_contract.txt"
+  },
+  {
+    "chunk_id": 21,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "CloudNova Systems",
+    "contract_file": "cloudnova_systems_contract.txt",
+    "clause_type": "payment",
+    "source": "cloudnova_systems_contract.txt"
+  },
+  {
+    "chunk_id": 22,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "CloudNova Systems",
+    "contract_file": "cloudnova_systems_contract.txt",
+    "clause_type": "sla",
+    "source": "cloudnova_systems_contract.txt"
+  },
+  {
+    "chunk_id": 23,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "CloudNova Systems",
+    "contract_file": "cloudnova_systems_contract.txt",
+    "clause_type": "compliance",
+    "source": "cloudnova_systems_contract.txt"
+  },
+  {
+    "chunk_id": 24,
+    "text": "Renewal Terms: The contract end date is 2027-08-31. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "CloudNova Systems",
+    "contract_file": "cloudnova_systems_contract.txt",
+    "clause_type": "renewal",
+    "source": "cloudnova_systems_contract.txt"
+  },
+  {
+    "chunk_id": 25,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "CloudNova Systems",
+    "contract_file": "cloudnova_systems_contract.txt",
+    "clause_type": "termination",
+    "source": "cloudnova_systems_contract.txt"
+  },
+  {
+    "chunk_id": 26,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "CloudNova Systems",
+    "contract_file": "cloudnova_systems_contract.txt",
+    "clause_type": "general",
+    "source": "cloudnova_systems_contract.txt"
+  },
+  {
+    "chunk_id": 27,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "CloudNova Systems",
+    "contract_file": "cloudnova_systems_contract.txt",
+    "clause_type": "general",
+    "source": "cloudnova_systems_contract.txt"
+  },
+  {
+    "chunk_id": 28,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "CloudScale Backup",
+    "contract_file": "cloudscale_backup_contract.txt",
+    "clause_type": "payment",
+    "source": "cloudscale_backup_contract.txt"
+  },
+  {
+    "chunk_id": 29,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "CloudScale Backup",
+    "contract_file": "cloudscale_backup_contract.txt",
+    "clause_type": "sla",
+    "source": "cloudscale_backup_contract.txt"
+  },
+  {
+    "chunk_id": 30,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "CloudScale Backup",
+    "contract_file": "cloudscale_backup_contract.txt",
+    "clause_type": "compliance",
+    "source": "cloudscale_backup_contract.txt"
+  },
+  {
+    "chunk_id": 31,
+    "text": "Renewal Terms: The contract end date is 2026-09-01. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "CloudScale Backup",
+    "contract_file": "cloudscale_backup_contract.txt",
+    "clause_type": "renewal",
+    "source": "cloudscale_backup_contract.txt"
+  },
+  {
+    "chunk_id": 32,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "CloudScale Backup",
+    "contract_file": "cloudscale_backup_contract.txt",
+    "clause_type": "termination",
+    "source": "cloudscale_backup_contract.txt"
+  },
+  {
+    "chunk_id": 33,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "CloudScale Backup",
+    "contract_file": "cloudscale_backup_contract.txt",
+    "clause_type": "general",
+    "source": "cloudscale_backup_contract.txt"
+  },
+  {
+    "chunk_id": 34,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "CloudScale Backup",
+    "contract_file": "cloudscale_backup_contract.txt",
+    "clause_type": "general",
+    "source": "cloudscale_backup_contract.txt"
+  },
+  {
+    "chunk_id": 35,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "CyberShield MDR",
+    "contract_file": "cybershield_mdr_contract.txt",
+    "clause_type": "payment",
+    "source": "cybershield_mdr_contract.txt"
+  },
+  {
+    "chunk_id": 36,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "CyberShield MDR",
+    "contract_file": "cybershield_mdr_contract.txt",
+    "clause_type": "sla",
+    "source": "cybershield_mdr_contract.txt"
+  },
+  {
+    "chunk_id": 37,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "CyberShield MDR",
+    "contract_file": "cybershield_mdr_contract.txt",
+    "clause_type": "compliance",
+    "source": "cybershield_mdr_contract.txt"
+  },
+  {
+    "chunk_id": 38,
+    "text": "Renewal Terms: The contract end date is 2027-01-01. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "CyberShield MDR",
+    "contract_file": "cybershield_mdr_contract.txt",
+    "clause_type": "renewal",
+    "source": "cybershield_mdr_contract.txt"
+  },
+  {
+    "chunk_id": 39,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "CyberShield MDR",
+    "contract_file": "cybershield_mdr_contract.txt",
+    "clause_type": "termination",
+    "source": "cybershield_mdr_contract.txt"
+  },
+  {
+    "chunk_id": 40,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "CyberShield MDR",
+    "contract_file": "cybershield_mdr_contract.txt",
+    "clause_type": "general",
+    "source": "cybershield_mdr_contract.txt"
+  },
+  {
+    "chunk_id": 41,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "CyberShield MDR",
+    "contract_file": "cybershield_mdr_contract.txt",
+    "clause_type": "general",
+    "source": "cybershield_mdr_contract.txt"
+  },
+  {
+    "chunk_id": 42,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "DataBridge Solutions",
+    "contract_file": "databridge_solutions_contract.txt",
+    "clause_type": "payment",
+    "source": "databridge_solutions_contract.txt"
+  },
+  {
+    "chunk_id": 43,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "DataBridge Solutions",
+    "contract_file": "databridge_solutions_contract.txt",
+    "clause_type": "sla",
+    "source": "databridge_solutions_contract.txt"
+  },
+  {
+    "chunk_id": 44,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "DataBridge Solutions",
+    "contract_file": "databridge_solutions_contract.txt",
+    "clause_type": "compliance",
+    "source": "databridge_solutions_contract.txt"
+  },
+  {
+    "chunk_id": 45,
+    "text": "Renewal Terms: The contract end date is 2026-07-20. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "DataBridge Solutions",
+    "contract_file": "databridge_solutions_contract.txt",
+    "clause_type": "renewal",
+    "source": "databridge_solutions_contract.txt"
+  },
+  {
+    "chunk_id": 46,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "DataBridge Solutions",
+    "contract_file": "databridge_solutions_contract.txt",
+    "clause_type": "termination",
+    "source": "databridge_solutions_contract.txt"
+  },
+  {
+    "chunk_id": 47,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "DataBridge Solutions",
+    "contract_file": "databridge_solutions_contract.txt",
+    "clause_type": "general",
+    "source": "databridge_solutions_contract.txt"
+  },
+  {
+    "chunk_id": 48,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "DataBridge Solutions",
+    "contract_file": "databridge_solutions_contract.txt",
+    "clause_type": "general",
+    "source": "databridge_solutions_contract.txt"
+  },
+  {
+    "chunk_id": 49,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "DataCleanse Pro",
+    "contract_file": "datacleanse_pro_contract.txt",
+    "clause_type": "payment",
+    "source": "datacleanse_pro_contract.txt"
+  },
+  {
+    "chunk_id": 50,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "DataCleanse Pro",
+    "contract_file": "datacleanse_pro_contract.txt",
+    "clause_type": "sla",
+    "source": "datacleanse_pro_contract.txt"
+  },
+  {
+    "chunk_id": 51,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "DataCleanse Pro",
+    "contract_file": "datacleanse_pro_contract.txt",
+    "clause_type": "compliance",
+    "source": "datacleanse_pro_contract.txt"
+  },
+  {
+    "chunk_id": 52,
+    "text": "Renewal Terms: The contract end date is 2026-08-10. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "DataCleanse Pro",
+    "contract_file": "datacleanse_pro_contract.txt",
+    "clause_type": "renewal",
+    "source": "datacleanse_pro_contract.txt"
+  },
+  {
+    "chunk_id": 53,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "DataCleanse Pro",
+    "contract_file": "datacleanse_pro_contract.txt",
+    "clause_type": "termination",
+    "source": "datacleanse_pro_contract.txt"
+  },
+  {
+    "chunk_id": 54,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "DataCleanse Pro",
+    "contract_file": "datacleanse_pro_contract.txt",
+    "clause_type": "general",
+    "source": "datacleanse_pro_contract.txt"
+  },
+  {
+    "chunk_id": 55,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "DataCleanse Pro",
+    "contract_file": "datacleanse_pro_contract.txt",
+    "clause_type": "general",
+    "source": "datacleanse_pro_contract.txt"
+  },
+  {
+    "chunk_id": 56,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "FinTrust Audit",
+    "contract_file": "fintrust_audit_contract.txt",
+    "clause_type": "payment",
+    "source": "fintrust_audit_contract.txt"
+  },
+  {
+    "chunk_id": 57,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "FinTrust Audit",
+    "contract_file": "fintrust_audit_contract.txt",
+    "clause_type": "sla",
+    "source": "fintrust_audit_contract.txt"
+  },
+  {
+    "chunk_id": 58,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "FinTrust Audit",
+    "contract_file": "fintrust_audit_contract.txt",
+    "clause_type": "compliance",
+    "source": "fintrust_audit_contract.txt"
+  },
+  {
+    "chunk_id": 59,
+    "text": "Renewal Terms: The contract end date is 2027-02-28. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "FinTrust Audit",
+    "contract_file": "fintrust_audit_contract.txt",
+    "clause_type": "renewal",
+    "source": "fintrust_audit_contract.txt"
+  },
+  {
+    "chunk_id": 60,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "FinTrust Audit",
+    "contract_file": "fintrust_audit_contract.txt",
+    "clause_type": "termination",
+    "source": "fintrust_audit_contract.txt"
+  },
+  {
+    "chunk_id": 61,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "FinTrust Audit",
+    "contract_file": "fintrust_audit_contract.txt",
+    "clause_type": "general",
+    "source": "fintrust_audit_contract.txt"
+  },
+  {
+    "chunk_id": 62,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "FinTrust Audit",
+    "contract_file": "fintrust_audit_contract.txt",
+    "clause_type": "general",
+    "source": "fintrust_audit_contract.txt"
+  },
+  {
+    "chunk_id": 63,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "HelpDesk Hive",
+    "contract_file": "helpdesk_hive_contract.txt",
+    "clause_type": "payment",
+    "source": "helpdesk_hive_contract.txt"
+  },
+  {
+    "chunk_id": 64,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "HelpDesk Hive",
+    "contract_file": "helpdesk_hive_contract.txt",
+    "clause_type": "sla",
+    "source": "helpdesk_hive_contract.txt"
+  },
+  {
+    "chunk_id": 65,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "HelpDesk Hive",
+    "contract_file": "helpdesk_hive_contract.txt",
+    "clause_type": "compliance",
+    "source": "helpdesk_hive_contract.txt"
+  },
+  {
+    "chunk_id": 66,
+    "text": "Renewal Terms: The contract end date is 2026-07-05. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "HelpDesk Hive",
+    "contract_file": "helpdesk_hive_contract.txt",
+    "clause_type": "renewal",
+    "source": "helpdesk_hive_contract.txt"
+  },
+  {
+    "chunk_id": 67,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "HelpDesk Hive",
+    "contract_file": "helpdesk_hive_contract.txt",
+    "clause_type": "termination",
+    "source": "helpdesk_hive_contract.txt"
+  },
+  {
+    "chunk_id": 68,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "HelpDesk Hive",
+    "contract_file": "helpdesk_hive_contract.txt",
+    "clause_type": "general",
+    "source": "helpdesk_hive_contract.txt"
+  },
+  {
+    "chunk_id": 69,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "HelpDesk Hive",
+    "contract_file": "helpdesk_hive_contract.txt",
+    "clause_type": "general",
+    "source": "helpdesk_hive_contract.txt"
+  },
+  {
+    "chunk_id": 70,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "InfraWatch Observability",
+    "contract_file": "infrawatch_observability_contract.txt",
+    "clause_type": "payment",
+    "source": "infrawatch_observability_contract.txt"
+  },
+  {
+    "chunk_id": 71,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "InfraWatch Observability",
+    "contract_file": "infrawatch_observability_contract.txt",
+    "clause_type": "sla",
+    "source": "infrawatch_observability_contract.txt"
+  },
+  {
+    "chunk_id": 72,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "InfraWatch Observability",
+    "contract_file": "infrawatch_observability_contract.txt",
+    "clause_type": "compliance",
+    "source": "infrawatch_observability_contract.txt"
+  },
+  {
+    "chunk_id": 73,
+    "text": "Renewal Terms: The contract end date is 2026-10-15. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "InfraWatch Observability",
+    "contract_file": "infrawatch_observability_contract.txt",
+    "clause_type": "renewal",
+    "source": "infrawatch_observability_contract.txt"
+  },
+  {
+    "chunk_id": 74,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "InfraWatch Observability",
+    "contract_file": "infrawatch_observability_contract.txt",
+    "clause_type": "termination",
+    "source": "infrawatch_observability_contract.txt"
+  },
+  {
+    "chunk_id": 75,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "InfraWatch Observability",
+    "contract_file": "infrawatch_observability_contract.txt",
+    "clause_type": "general",
+    "source": "infrawatch_observability_contract.txt"
+  },
+  {
+    "chunk_id": 76,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "InfraWatch Observability",
+    "contract_file": "infrawatch_observability_contract.txt",
+    "clause_type": "general",
+    "source": "infrawatch_observability_contract.txt"
+  },
+  {
+    "chunk_id": 77,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "InsightOps Analytics",
+    "contract_file": "insightops_analytics_contract.txt",
+    "clause_type": "payment",
+    "source": "insightops_analytics_contract.txt"
+  },
+  {
+    "chunk_id": 78,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "InsightOps Analytics",
+    "contract_file": "insightops_analytics_contract.txt",
+    "clause_type": "sla",
+    "source": "insightops_analytics_contract.txt"
+  },
+  {
+    "chunk_id": 79,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "InsightOps Analytics",
+    "contract_file": "insightops_analytics_contract.txt",
+    "clause_type": "compliance",
+    "source": "insightops_analytics_contract.txt"
+  },
+  {
+    "chunk_id": 80,
+    "text": "Renewal Terms: The contract end date is 2026-12-31. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "InsightOps Analytics",
+    "contract_file": "insightops_analytics_contract.txt",
+    "clause_type": "renewal",
+    "source": "insightops_analytics_contract.txt"
+  },
+  {
+    "chunk_id": 81,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "InsightOps Analytics",
+    "contract_file": "insightops_analytics_contract.txt",
+    "clause_type": "termination",
+    "source": "insightops_analytics_contract.txt"
+  },
+  {
+    "chunk_id": 82,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "InsightOps Analytics",
+    "contract_file": "insightops_analytics_contract.txt",
+    "clause_type": "general",
+    "source": "insightops_analytics_contract.txt"
+  },
+  {
+    "chunk_id": 83,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "InsightOps Analytics",
+    "contract_file": "insightops_analytics_contract.txt",
+    "clause_type": "general",
+    "source": "insightops_analytics_contract.txt"
+  },
+  {
+    "chunk_id": 84,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "LedgerFlow AP",
+    "contract_file": "ledgerflow_ap_contract.txt",
+    "clause_type": "payment",
+    "source": "ledgerflow_ap_contract.txt"
+  },
+  {
+    "chunk_id": 85,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "LedgerFlow AP",
+    "contract_file": "ledgerflow_ap_contract.txt",
+    "clause_type": "sla",
+    "source": "ledgerflow_ap_contract.txt"
+  },
+  {
+    "chunk_id": 86,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "LedgerFlow AP",
+    "contract_file": "ledgerflow_ap_contract.txt",
+    "clause_type": "compliance",
+    "source": "ledgerflow_ap_contract.txt"
+  },
+  {
+    "chunk_id": 87,
+    "text": "Renewal Terms: The contract end date is 2026-11-30. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "LedgerFlow AP",
+    "contract_file": "ledgerflow_ap_contract.txt",
+    "clause_type": "renewal",
+    "source": "ledgerflow_ap_contract.txt"
+  },
+  {
+    "chunk_id": 88,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "LedgerFlow AP",
+    "contract_file": "ledgerflow_ap_contract.txt",
+    "clause_type": "termination",
+    "source": "ledgerflow_ap_contract.txt"
+  },
+  {
+    "chunk_id": 89,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "LedgerFlow AP",
+    "contract_file": "ledgerflow_ap_contract.txt",
+    "clause_type": "general",
+    "source": "ledgerflow_ap_contract.txt"
+  },
+  {
+    "chunk_id": 90,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "LedgerFlow AP",
+    "contract_file": "ledgerflow_ap_contract.txt",
+    "clause_type": "general",
+    "source": "ledgerflow_ap_contract.txt"
+  },
+  {
+    "chunk_id": 91,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "MarketPulse Ads",
+    "contract_file": "marketpulse_ads_contract.txt",
+    "clause_type": "payment",
+    "source": "marketpulse_ads_contract.txt"
+  },
+  {
+    "chunk_id": 92,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "MarketPulse Ads",
+    "contract_file": "marketpulse_ads_contract.txt",
+    "clause_type": "sla",
+    "source": "marketpulse_ads_contract.txt"
+  },
+  {
+    "chunk_id": 93,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "MarketPulse Ads",
+    "contract_file": "marketpulse_ads_contract.txt",
+    "clause_type": "compliance",
+    "source": "marketpulse_ads_contract.txt"
+  },
+  {
+    "chunk_id": 94,
+    "text": "Renewal Terms: The contract end date is 2027-03-31. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "MarketPulse Ads",
+    "contract_file": "marketpulse_ads_contract.txt",
+    "clause_type": "renewal",
+    "source": "marketpulse_ads_contract.txt"
+  },
+  {
+    "chunk_id": 95,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "MarketPulse Ads",
+    "contract_file": "marketpulse_ads_contract.txt",
+    "clause_type": "termination",
+    "source": "marketpulse_ads_contract.txt"
+  },
+  {
+    "chunk_id": 96,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "MarketPulse Ads",
+    "contract_file": "marketpulse_ads_contract.txt",
+    "clause_type": "general",
+    "source": "marketpulse_ads_contract.txt"
+  },
+  {
+    "chunk_id": 97,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "MarketPulse Ads",
+    "contract_file": "marketpulse_ads_contract.txt",
+    "clause_type": "general",
+    "source": "marketpulse_ads_contract.txt"
+  },
+  {
+    "chunk_id": 98,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "MediaTech Studio",
+    "contract_file": "mediatech_studio_contract.txt",
+    "clause_type": "payment",
+    "source": "mediatech_studio_contract.txt"
+  },
+  {
+    "chunk_id": 99,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "MediaTech Studio",
+    "contract_file": "mediatech_studio_contract.txt",
+    "clause_type": "sla",
+    "source": "mediatech_studio_contract.txt"
+  },
+  {
+    "chunk_id": 100,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "MediaTech Studio",
+    "contract_file": "mediatech_studio_contract.txt",
+    "clause_type": "compliance",
+    "source": "mediatech_studio_contract.txt"
+  },
+  {
+    "chunk_id": 101,
+    "text": "Renewal Terms: The contract end date is 2026-07-10. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "MediaTech Studio",
+    "contract_file": "mediatech_studio_contract.txt",
+    "clause_type": "renewal",
+    "source": "mediatech_studio_contract.txt"
+  },
+  {
+    "chunk_id": 102,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "MediaTech Studio",
+    "contract_file": "mediatech_studio_contract.txt",
+    "clause_type": "termination",
+    "source": "mediatech_studio_contract.txt"
+  },
+  {
+    "chunk_id": 103,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "MediaTech Studio",
+    "contract_file": "mediatech_studio_contract.txt",
+    "clause_type": "general",
+    "source": "mediatech_studio_contract.txt"
+  },
+  {
+    "chunk_id": 104,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "MediaTech Studio",
+    "contract_file": "mediatech_studio_contract.txt",
+    "clause_type": "general",
+    "source": "mediatech_studio_contract.txt"
+  },
+  {
+    "chunk_id": 105,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "ObjectVault Storage",
+    "contract_file": "objectvault_storage_contract.txt",
+    "clause_type": "payment",
+    "source": "objectvault_storage_contract.txt"
+  },
+  {
+    "chunk_id": 106,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "ObjectVault Storage",
+    "contract_file": "objectvault_storage_contract.txt",
+    "clause_type": "sla",
+    "source": "objectvault_storage_contract.txt"
+  },
+  {
+    "chunk_id": 107,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "ObjectVault Storage",
+    "contract_file": "objectvault_storage_contract.txt",
+    "clause_type": "compliance",
+    "source": "objectvault_storage_contract.txt"
+  },
+  {
+    "chunk_id": 108,
+    "text": "Renewal Terms: The contract end date is 2026-12-15. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "ObjectVault Storage",
+    "contract_file": "objectvault_storage_contract.txt",
+    "clause_type": "renewal",
+    "source": "objectvault_storage_contract.txt"
+  },
+  {
+    "chunk_id": 109,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "ObjectVault Storage",
+    "contract_file": "objectvault_storage_contract.txt",
+    "clause_type": "termination",
+    "source": "objectvault_storage_contract.txt"
+  },
+  {
+    "chunk_id": 110,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "ObjectVault Storage",
+    "contract_file": "objectvault_storage_contract.txt",
+    "clause_type": "general",
+    "source": "objectvault_storage_contract.txt"
+  },
+  {
+    "chunk_id": 111,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "ObjectVault Storage",
+    "contract_file": "objectvault_storage_contract.txt",
+    "clause_type": "general",
+    "source": "objectvault_storage_contract.txt"
+  },
+  {
+    "chunk_id": 112,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "PayRoute Connect",
+    "contract_file": "payroute_connect_contract.txt",
+    "clause_type": "payment",
+    "source": "payroute_connect_contract.txt"
+  },
+  {
+    "chunk_id": 113,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "PayRoute Connect",
+    "contract_file": "payroute_connect_contract.txt",
+    "clause_type": "sla",
+    "source": "payroute_connect_contract.txt"
+  },
+  {
+    "chunk_id": 114,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "PayRoute Connect",
+    "contract_file": "payroute_connect_contract.txt",
+    "clause_type": "compliance",
+    "source": "payroute_connect_contract.txt"
+  },
+  {
+    "chunk_id": 115,
+    "text": "Renewal Terms: The contract end date is 2026-07-28. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "PayRoute Connect",
+    "contract_file": "payroute_connect_contract.txt",
+    "clause_type": "renewal",
+    "source": "payroute_connect_contract.txt"
+  },
+  {
+    "chunk_id": 116,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "PayRoute Connect",
+    "contract_file": "payroute_connect_contract.txt",
+    "clause_type": "termination",
+    "source": "payroute_connect_contract.txt"
+  },
+  {
+    "chunk_id": 117,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "PayRoute Connect",
+    "contract_file": "payroute_connect_contract.txt",
+    "clause_type": "general",
+    "source": "payroute_connect_contract.txt"
+  },
+  {
+    "chunk_id": 118,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "PayRoute Connect",
+    "contract_file": "payroute_connect_contract.txt",
+    "clause_type": "general",
+    "source": "payroute_connect_contract.txt"
+  },
+  {
+    "chunk_id": 119,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "PeoplePulse HR",
+    "contract_file": "peoplepulse_hr_contract.txt",
+    "clause_type": "payment",
+    "source": "peoplepulse_hr_contract.txt"
+  },
+  {
+    "chunk_id": 120,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "PeoplePulse HR",
+    "contract_file": "peoplepulse_hr_contract.txt",
+    "clause_type": "sla",
+    "source": "peoplepulse_hr_contract.txt"
+  },
+  {
+    "chunk_id": 121,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "PeoplePulse HR",
+    "contract_file": "peoplepulse_hr_contract.txt",
+    "clause_type": "compliance",
+    "source": "peoplepulse_hr_contract.txt"
+  },
+  {
+    "chunk_id": 122,
+    "text": "Renewal Terms: The contract end date is 2027-05-31. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "PeoplePulse HR",
+    "contract_file": "peoplepulse_hr_contract.txt",
+    "clause_type": "renewal",
+    "source": "peoplepulse_hr_contract.txt"
+  },
+  {
+    "chunk_id": 123,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "PeoplePulse HR",
+    "contract_file": "peoplepulse_hr_contract.txt",
+    "clause_type": "termination",
+    "source": "peoplepulse_hr_contract.txt"
+  },
+  {
+    "chunk_id": 124,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "PeoplePulse HR",
+    "contract_file": "peoplepulse_hr_contract.txt",
+    "clause_type": "general",
+    "source": "peoplepulse_hr_contract.txt"
+  },
+  {
+    "chunk_id": 125,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "PeoplePulse HR",
+    "contract_file": "peoplepulse_hr_contract.txt",
+    "clause_type": "general",
+    "source": "peoplepulse_hr_contract.txt"
+  },
+  {
+    "chunk_id": 126,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "QueryForge BI",
+    "contract_file": "queryforge_bi_contract.txt",
+    "clause_type": "payment",
+    "source": "queryforge_bi_contract.txt"
+  },
+  {
+    "chunk_id": 127,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "QueryForge BI",
+    "contract_file": "queryforge_bi_contract.txt",
+    "clause_type": "sla",
+    "source": "queryforge_bi_contract.txt"
+  },
+  {
+    "chunk_id": 128,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "QueryForge BI",
+    "contract_file": "queryforge_bi_contract.txt",
+    "clause_type": "compliance",
+    "source": "queryforge_bi_contract.txt"
+  },
+  {
+    "chunk_id": 129,
+    "text": "Renewal Terms: The contract end date is 2027-04-30. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "QueryForge BI",
+    "contract_file": "queryforge_bi_contract.txt",
+    "clause_type": "renewal",
+    "source": "queryforge_bi_contract.txt"
+  },
+  {
+    "chunk_id": 130,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "QueryForge BI",
+    "contract_file": "queryforge_bi_contract.txt",
+    "clause_type": "termination",
+    "source": "queryforge_bi_contract.txt"
+  },
+  {
+    "chunk_id": 131,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "QueryForge BI",
+    "contract_file": "queryforge_bi_contract.txt",
+    "clause_type": "general",
+    "source": "queryforge_bi_contract.txt"
+  },
+  {
+    "chunk_id": 132,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "QueryForge BI",
+    "contract_file": "queryforge_bi_contract.txt",
+    "clause_type": "general",
+    "source": "queryforge_bi_contract.txt"
+  },
+  {
+    "chunk_id": 133,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "ReviewRocket CX",
+    "contract_file": "reviewrocket_cx_contract.txt",
+    "clause_type": "payment",
+    "source": "reviewrocket_cx_contract.txt"
+  },
+  {
+    "chunk_id": 134,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "ReviewRocket CX",
+    "contract_file": "reviewrocket_cx_contract.txt",
+    "clause_type": "sla",
+    "source": "reviewrocket_cx_contract.txt"
+  },
+  {
+    "chunk_id": 135,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "ReviewRocket CX",
+    "contract_file": "reviewrocket_cx_contract.txt",
+    "clause_type": "compliance",
+    "source": "reviewrocket_cx_contract.txt"
+  },
+  {
+    "chunk_id": 136,
+    "text": "Renewal Terms: The contract end date is 2027-07-31. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "ReviewRocket CX",
+    "contract_file": "reviewrocket_cx_contract.txt",
+    "clause_type": "renewal",
+    "source": "reviewrocket_cx_contract.txt"
+  },
+  {
+    "chunk_id": 137,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "ReviewRocket CX",
+    "contract_file": "reviewrocket_cx_contract.txt",
+    "clause_type": "termination",
+    "source": "reviewrocket_cx_contract.txt"
+  },
+  {
+    "chunk_id": 138,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "ReviewRocket CX",
+    "contract_file": "reviewrocket_cx_contract.txt",
+    "clause_type": "general",
+    "source": "reviewrocket_cx_contract.txt"
+  },
+  {
+    "chunk_id": 139,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "ReviewRocket CX",
+    "contract_file": "reviewrocket_cx_contract.txt",
+    "clause_type": "general",
+    "source": "reviewrocket_cx_contract.txt"
+  },
+  {
+    "chunk_id": 140,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "SafeHarbor GRC",
+    "contract_file": "safeharbor_grc_contract.txt",
+    "clause_type": "payment",
+    "source": "safeharbor_grc_contract.txt"
+  },
+  {
+    "chunk_id": 141,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "SafeHarbor GRC",
+    "contract_file": "safeharbor_grc_contract.txt",
+    "clause_type": "sla",
+    "source": "safeharbor_grc_contract.txt"
+  },
+  {
+    "chunk_id": 142,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "SafeHarbor GRC",
+    "contract_file": "safeharbor_grc_contract.txt",
+    "clause_type": "compliance",
+    "source": "safeharbor_grc_contract.txt"
+  },
+  {
+    "chunk_id": 143,
+    "text": "Renewal Terms: The contract end date is 2027-02-14. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "SafeHarbor GRC",
+    "contract_file": "safeharbor_grc_contract.txt",
+    "clause_type": "renewal",
+    "source": "safeharbor_grc_contract.txt"
+  },
+  {
+    "chunk_id": 144,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "SafeHarbor GRC",
+    "contract_file": "safeharbor_grc_contract.txt",
+    "clause_type": "termination",
+    "source": "safeharbor_grc_contract.txt"
+  },
+  {
+    "chunk_id": 145,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "SafeHarbor GRC",
+    "contract_file": "safeharbor_grc_contract.txt",
+    "clause_type": "general",
+    "source": "safeharbor_grc_contract.txt"
+  },
+  {
+    "chunk_id": 146,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "SafeHarbor GRC",
+    "contract_file": "safeharbor_grc_contract.txt",
+    "clause_type": "general",
+    "source": "safeharbor_grc_contract.txt"
+  },
+  {
+    "chunk_id": 147,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "SecurePay Gateway",
+    "contract_file": "securepay_gateway_contract.txt",
+    "clause_type": "payment",
+    "source": "securepay_gateway_contract.txt"
+  },
+  {
+    "chunk_id": 148,
+    "text": "SLA Obligations: Vendor will maintain 99.9% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "SecurePay Gateway",
+    "contract_file": "securepay_gateway_contract.txt",
+    "clause_type": "sla",
+    "source": "securepay_gateway_contract.txt"
+  },
+  {
+    "chunk_id": 149,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "SecurePay Gateway",
+    "contract_file": "securepay_gateway_contract.txt",
+    "clause_type": "compliance",
+    "source": "securepay_gateway_contract.txt"
+  },
+  {
+    "chunk_id": 150,
+    "text": "Renewal Terms: The contract end date is 2027-04-30. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "SecurePay Gateway",
+    "contract_file": "securepay_gateway_contract.txt",
+    "clause_type": "renewal",
+    "source": "securepay_gateway_contract.txt"
+  },
+  {
+    "chunk_id": 151,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "SecurePay Gateway",
+    "contract_file": "securepay_gateway_contract.txt",
+    "clause_type": "termination",
+    "source": "securepay_gateway_contract.txt"
+  },
+  {
+    "chunk_id": 152,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "SecurePay Gateway",
+    "contract_file": "securepay_gateway_contract.txt",
+    "clause_type": "general",
+    "source": "securepay_gateway_contract.txt"
+  },
+  {
+    "chunk_id": 153,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "SecurePay Gateway",
+    "contract_file": "securepay_gateway_contract.txt",
+    "clause_type": "general",
+    "source": "securepay_gateway_contract.txt"
+  },
+  {
+    "chunk_id": 154,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 30 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "Supportly India",
+    "contract_file": "supportly_india_contract.txt",
+    "clause_type": "payment",
+    "source": "supportly_india_contract.txt"
+  },
+  {
+    "chunk_id": 155,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "Supportly India",
+    "contract_file": "supportly_india_contract.txt",
+    "clause_type": "sla",
+    "source": "supportly_india_contract.txt"
+  },
+  {
+    "chunk_id": 156,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "Supportly India",
+    "contract_file": "supportly_india_contract.txt",
+    "clause_type": "compliance",
+    "source": "supportly_india_contract.txt"
+  },
+  {
+    "chunk_id": 157,
+    "text": "Renewal Terms: The contract end date is 2027-01-01. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "Supportly India",
+    "contract_file": "supportly_india_contract.txt",
+    "clause_type": "renewal",
+    "source": "supportly_india_contract.txt"
+  },
+  {
+    "chunk_id": 158,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "Supportly India",
+    "contract_file": "supportly_india_contract.txt",
+    "clause_type": "termination",
+    "source": "supportly_india_contract.txt"
+  },
+  {
+    "chunk_id": 159,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "Supportly India",
+    "contract_file": "supportly_india_contract.txt",
+    "clause_type": "general",
+    "source": "supportly_india_contract.txt"
+  },
+  {
+    "chunk_id": 160,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "Supportly India",
+    "contract_file": "supportly_india_contract.txt",
+    "clause_type": "general",
+    "source": "supportly_india_contract.txt"
+  },
+  {
+    "chunk_id": 161,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "TicketNest CX",
+    "contract_file": "ticketnest_cx_contract.txt",
+    "clause_type": "payment",
+    "source": "ticketnest_cx_contract.txt"
+  },
+  {
+    "chunk_id": 162,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "TicketNest CX",
+    "contract_file": "ticketnest_cx_contract.txt",
+    "clause_type": "sla",
+    "source": "ticketnest_cx_contract.txt"
+  },
+  {
+    "chunk_id": 163,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "TicketNest CX",
+    "contract_file": "ticketnest_cx_contract.txt",
+    "clause_type": "compliance",
+    "source": "ticketnest_cx_contract.txt"
+  },
+  {
+    "chunk_id": 164,
+    "text": "Renewal Terms: The contract end date is 2026-08-01. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "TicketNest CX",
+    "contract_file": "ticketnest_cx_contract.txt",
+    "clause_type": "renewal",
+    "source": "ticketnest_cx_contract.txt"
+  },
+  {
+    "chunk_id": 165,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "TicketNest CX",
+    "contract_file": "ticketnest_cx_contract.txt",
+    "clause_type": "termination",
+    "source": "ticketnest_cx_contract.txt"
+  },
+  {
+    "chunk_id": 166,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "TicketNest CX",
+    "contract_file": "ticketnest_cx_contract.txt",
+    "clause_type": "general",
+    "source": "ticketnest_cx_contract.txt"
+  },
+  {
+    "chunk_id": 167,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "TicketNest CX",
+    "contract_file": "ticketnest_cx_contract.txt",
+    "clause_type": "general",
+    "source": "ticketnest_cx_contract.txt"
+  },
+  {
+    "chunk_id": 168,
+    "text": "Payment Terms: Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.",
+    "vendor_name": "TrustDesk KYC",
+    "contract_file": "trustdesk_kyc_contract.txt",
+    "clause_type": "payment",
+    "source": "trustdesk_kyc_contract.txt"
+  },
+  {
+    "chunk_id": 169,
+    "text": "SLA Obligations: Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.",
+    "vendor_name": "TrustDesk KYC",
+    "contract_file": "trustdesk_kyc_contract.txt",
+    "clause_type": "sla",
+    "source": "trustdesk_kyc_contract.txt"
+  },
+  {
+    "chunk_id": 170,
+    "text": "Compliance Requirements: Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.",
+    "vendor_name": "TrustDesk KYC",
+    "contract_file": "trustdesk_kyc_contract.txt",
+    "clause_type": "compliance",
+    "source": "trustdesk_kyc_contract.txt"
+  },
+  {
+    "chunk_id": 171,
+    "text": "Renewal Terms: The contract end date is 2026-07-25. Renewal requires business-owner approval and non-renewal notice at least 60 days before expiration unless a signed order form states otherwise.",
+    "vendor_name": "TrustDesk KYC",
+    "contract_file": "trustdesk_kyc_contract.txt",
+    "clause_type": "renewal",
+    "source": "trustdesk_kyc_contract.txt"
+  },
+  {
+    "chunk_id": 172,
+    "text": "Termination Rights: Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.",
+    "vendor_name": "TrustDesk KYC",
+    "contract_file": "trustdesk_kyc_contract.txt",
+    "clause_type": "termination",
+    "source": "trustdesk_kyc_contract.txt"
+  },
+  {
+    "chunk_id": 173,
+    "text": "Data Security: Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.",
+    "vendor_name": "TrustDesk KYC",
+    "contract_file": "trustdesk_kyc_contract.txt",
+    "clause_type": "general",
+    "source": "trustdesk_kyc_contract.txt"
+  },
+  {
+    "chunk_id": 174,
+    "text": "Escalation Procedure: Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.",
+    "vendor_name": "TrustDesk KYC",
+    "contract_file": "trustdesk_kyc_contract.txt",
+    "clause_type": "general",
+    "source": "trustdesk_kyc_contract.txt"
+  }
+]

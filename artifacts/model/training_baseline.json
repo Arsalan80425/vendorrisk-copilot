@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-06-17T19:35:44.567893+00:00",
+  "row_count": 25,
+  "metrics": {
+    "pending_invoice_amount": 61099.0,
+    "sla_breach_rate": 0.25,
+    "compliance_missing_flag": 0.32,
+    "duplicate_invoice_count": 0.08
+  }
+}

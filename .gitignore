@@ -6,6 +6,5 @@ __pycache__/
 .env
 .venv/
 venv/
-artifacts/
 mlruns/
 .DS_Store

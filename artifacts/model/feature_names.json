@@ -1,0 +1,18 @@
+[
+  "total_spend",
+  "pending_invoice_amount",
+  "overdue_invoice_amount",
+  "invoice_count",
+  "duplicate_invoice_count",
+  "po_mismatch_count",
+  "average_resolution_hours",
+  "max_resolution_hours",
+  "ticket_count",
+  "critical_ticket_count",
+  "sla_breach_count",
+  "sla_breach_rate",
+  "days_until_contract_end",
+  "renewal_within_90_days",
+  "compliance_missing_flag",
+  "criticality_score"
+]
