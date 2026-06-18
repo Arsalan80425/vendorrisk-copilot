@@ -24,10 +24,10 @@
   {
     "model_name": "RandomForestClassifier",
     "metrics": {
-      "accuracy": 1.0,
-      "precision": 1.0,
+      "accuracy": 0.875,
+      "precision": 0.75,
       "recall": 1.0,
-      "f1": 1.0,
+      "f1": 0.8571,
       "roc_auc": 1.0
     },
     "parameters": {

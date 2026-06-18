@@ -8,7 +8,28 @@
 4. Select `n8n/vendor_risk_workflow.example.json`.
 5. Save the workflow as your own copy before editing.
 
-The example uses a Manual Trigger and sends sample `vendor_id = V002` to the VendorRisk Copilot FastAPI endpoint.
+The example uses a Manual Trigger and sends sample `vendor_id = V001` to the VendorRisk Copilot FastAPI endpoint.
+
+## Use the deployed Render API
+
+For n8n Cloud or any external n8n instance, point the **Analyze Vendor via FastAPI** HTTP Request node at the public Render service:
+
+```text
+https://vendorrisk-copilot.onrender.com/analyze-vendor
+```
+
+The checked-in workflow JSON already uses this URL. Set `DEPLOYMENT_MODE=lightweight` on Render so the free tier stays within memory limits.
+
+Verify the API before running the workflow:
+
+```bash
+curl https://vendorrisk-copilot.onrender.com/health
+curl -X POST https://vendorrisk-copilot.onrender.com/analyze-vendor \
+  -H "Content-Type: application/json" \
+  -d "{\"vendor_id\":\"V001\"}"
+```
+
+`V001` (DataBridge Solutions) returns `risk_level: High`, which exercises the IF branch, Slack alert, and Google Sheets append.
 
 ## Run FastAPI locally
 
@@ -56,7 +77,7 @@ The workflow includes a disabled Slack webhook placeholder. To use it:
 
 1. Create an incoming webhook in Slack.
 2. Store the webhook URL as an n8n environment variable named `SLACK_WEBHOOK_URL`.
-3. Enable the **Slack Webhook Placeholder** HTTP Request node.
+3. Enable the **Send High-Risk Slack Alert** HTTP Request node.
 4. Run the workflow with a high-risk vendor such as `V001`.
 
 Do not paste real Slack webhook URLs into exported example JSON files.

@@ -38,18 +38,12 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://host.docker.internal:8000/analyze-vendor",
+        "url": "https://vendorrisk-copilot.onrender.com/analyze-vendor",
         "sendBody": true,
-        "bodyParameters": {
-          "parameters": [
-            {
-              "name": "vendor_id",
-              "value": "={{ $json.vendor_id }}"
-            }
-          ]
-        },
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"vendor_id\": \"{{ $json.vendor_id }}\"\n}",
         "options": {
-          "timeout": 12000
+          "timeout": 120000
         }
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -98,10 +92,10 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "YOUR_SLACK_WEBHOOK_URL",
+        "url": "={{$env.SLACK_WEBHOOK_URL}}",
         "sendBody": true,
         "specifyBody": "json",
-        "jsonBody": "={\n  \"text\": \"🚨 High-Risk Vendor Alert\\n\\nVendor: {{$json.vendor_name}}\\nRisk Level: {{$json.risk_level}}\\nRisk Score: {{$json.risk_score}}\\nEstimated Exposure: ₹{{$json.estimated_financial_exposure}}\\n\\nRecommended Action:\\n{{$json.recommended_action}}\"\n}",
+        "jsonBody": "={\n  \"text\": \"🚨 High-Risk Vendor Alert\\n\\nVendor: {{$json.vendor_name}}\\nRisk Level: {{$json.risk_level}}\\nRisk Score: {{$json.risk_score}}\\nEstimated Exposure: ${{$json.estimated_financial_exposure}}\\n\\nRecommended Action:\\n{{$json.recommended_action}}\"\n}",
         "options": {}
       },
       "type": "n8n-nodes-base.httpRequest",
@@ -129,9 +123,7 @@
           "mode": "list",
           "cachedResultName": "VendorRisk Tracker",
           "cachedResultUrl": "https://docs.google.com/spreadsheets/d/YOUR_GOOGLE_SHEET_ID/edit#gid=0"
-        }
-      }
-    },
+        },
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
@@ -221,13 +213,7 @@
         80
       ],
       "id": "59bd21b7-46cb-434e-9030-6575beec6a39",
-      "name": "Append Risk Queue Row",
-      "credentials": {
-        "googleSheetsOAuth2Api": {
-          "id": "XADwVQwDnU39rykg",
-          "name": "Google Sheets account"
-        }
-      }
+      "name": "Append Risk Queue Row"
     }
   ],
   "pinData": {},

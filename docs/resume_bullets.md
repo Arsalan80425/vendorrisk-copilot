@@ -10,9 +10,15 @@ Use these variants on resumes, LinkedIn, GitHub, and portfolio sites. Adjust com
 
 ---
 
+## MLOps Bullet (safer wording)
+
+> Implemented local MLOps workflow for vendor-risk modeling, comparing Logistic Regression and Random Forest models, tracking evaluation metrics, saving best-model artifacts, storing feature baselines, and adding lightweight drift monitoring.
+
+---
+
 ## 3-Bullet Version
 
-- Built **VendorRisk Copilot**, a procurement risk automation platform integrating data validation, vendor-level feature engineering, and ML scoring (LogisticRegression + RandomForest) with MLflow experiment tracking and drift monitoring.
+- Built **VendorRisk Copilot**, a procurement risk automation platform integrating data validation, vendor-level feature engineering, and ML scoring (Logistic Regression + Random Forest) with local MLOps training, evaluation metrics, and lightweight drift monitoring.
 - Implemented **local contract RAG** with sentence-transformers and FAISS to retrieve payment, SLA, compliance, and renewal clauses, grounding recommendations without paid LLM APIs.
 - Delivered **LangGraph orchestration**, FastAPI endpoints, Streamlit BI dashboard, n8n automation payloads, Docker deployment, and ROI simulation estimating ~$910K preventable exposure in a 12-vendor pilot scenario.
 
@@ -23,7 +29,7 @@ Use these variants on resumes, LinkedIn, GitHub, and portfolio sites. Adjust com
 - Designed and built **VendorRisk Copilot**, an AI Solutions Engineering portfolio project that automates vendor risk review across invoices, support tickets, contracts, and vendor master data.
 - Implemented **data quality validation** for schema checks, referential integrity, duplicate invoice detection, PO mismatches, and missing compliance evidence with structured error/warning reports.
 - Built an **ETL feature pipeline** producing vendor-level signals: spend, pending/overdue exposure, SLA breach rate, renewal urgency, compliance flags, and high-risk labels in `vendor_features.csv`.
-- Trained and compared **LogisticRegression and RandomForest** classifiers, logged experiments to **MLflow**, persisted the best model by F1, and added lightweight **drift monitoring** against a training baseline.
+- Implemented **local MLOps workflow** for vendor-risk modeling: compared Logistic Regression and Random Forest models, tracked evaluation metrics, saved best-model artifacts, stored feature baselines, and added lightweight **drift monitoring**.
 - Developed **contract RAG** (sentence-transformers + FAISS) and a **LangGraph workflow** that chains validation, ML scoring, clause retrieval, source-grounded explanation, procurement actions, and n8n-ready automation payloads.
 - Shipped **FastAPI** (`/analyze-vendor`, portfolio summary), **Streamlit BI dashboard** with ROI simulation, **Docker Compose** deployment, and an **n8n example workflow** for high-risk Slack escalation.
 

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T06:36:09.186582+00:00",
+  "generated_at": "2026-06-18T10:04:56.540350+00:00",
   "baseline_path": "C:\\Users\\arsal\\Desktop\\VendorRisk Copilot\\vendorrisk-copilot\\artifacts\\model\\training_baseline.json",
   "features_path": "C:\\Users\\arsal\\Desktop\\VendorRisk Copilot\\vendorrisk-copilot\\data\\processed\\vendor_features.csv",
   "drift_detected": false,

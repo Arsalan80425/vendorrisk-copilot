@@ -173,29 +173,24 @@ API docs: `http://127.0.0.1:8000/docs`
 
 ## MLOps & Monitoring
 
-Train vendor risk models with MLflow tracking, persist the champion artifact, and monitor feature drift locally.
+VendorRisk Copilot includes a local MLOps workflow using MLflow-compatible training scripts. The training pipeline compares Logistic Regression and Random Forest models, logs evaluation metrics, saves the best model artifact, stores the feature list, and creates a training baseline for monitoring.
+
+The project also includes a lightweight drift-monitoring script that compares current vendor-risk features against the training baseline to detect changes in pending invoice exposure, SLA breach rate, compliance gaps, and duplicate invoice patterns.
+
+Run locally:
 
 ```bash
-python -m src.pipelines.build_features
 python -m src.ml.train_model
 python -m src.ml.monitor_drift
 ```
 
-| Step | Command / output | Purpose |
-| --- | --- | --- |
-| Train | `python -m src.ml.train_model` | Trains LogisticRegression and RandomForestClassifier, logs runs to `./mlruns`, saves best model by F1 |
-| Track | `mlflow ui` (with `MLFLOW_ALLOW_FILE_STORE=true`) | Compare parameters, metrics, and artifacts across runs |
-| Score | `python -m src.ml.predict_risk --vendor-id V001` | Load `artifacts/model/vendor_risk_model.joblib` |
-| Drift | `python -m src.ml.monitor_drift` | Compare `data/processed/vendor_features.csv` to `artifacts/model/training_baseline.json` |
+Model artifacts are saved under:
 
-**Artifacts written by training:**
+```
+artifacts/model/
+```
 
-- `artifacts/model/vendor_risk_model.joblib` — champion model
-- `artifacts/model/feature_names.json` — input feature list
-- `artifacts/model/training_baseline.json` — feature means for drift checks
-- `mlruns/` — MLflow experiment history
-
-**Drift report:** `artifacts/model/latest_drift_report.json`
+The deployed Render API runs in lightweight serving mode for reliability on the free tier, while the full local mode contains the ML/MLOps pipeline.
 
 Full walkthrough: [docs/mlops.md](docs/mlops.md)
 
@@ -219,6 +214,8 @@ docker compose up --build
 `docker-compose.yml` mounts `./data`, `./artifacts`, and `./mlruns` so outputs persist between container restarts.
 
 ## Render Deployment (Free Tier)
+
+The deployed Render API runs in lightweight mode for reliability on the free tier. Full local mode includes MLflow-tracked model training and FAISS/sentence-transformers contract RAG, while the public API uses rule-based scoring and lightweight keyword retrieval with the same response schema.
 
 The API supports a **lightweight** deployment mode for memory-constrained hosts such as Render Free. Lightweight mode uses rule-based scoring and keyword contract retrieval only — no torch, sentence-transformers, FAISS, MLflow, or joblib model loading.
 
@@ -295,28 +292,51 @@ VendorRisk Copilot includes a self-hosted n8n Community Edition workflow that ca
 
 Import `n8n/vendor_risk_workflow.example.json` into n8n and follow [docs/n8n_setup.md](docs/n8n_setup.md) to connect FastAPI, Slack, and Google Sheets.
 
+See [Screenshots](#screenshots) for the n8n canvas, Slack alert, and Google Sheets tracker.
+
 ## Screenshots
 
-### Dashboard
+Visual walkthrough of the VendorRisk Copilot surfaces. All images live in [`Screenshots/`](Screenshots/).
 
-<!-- Replace with actual screenshot after capture -->
-![VendorRisk Copilot dashboard — executive summary and vendor drill-down](docs/images/dashboard.png)
+### Streamlit BI Dashboard
 
-> Placeholder: capture the Streamlit dashboard showing KPIs, risk charts, and the DataBridge vendor analysis panel.
+Full dashboard sequence from executive KPIs through vendor drill-down, contract evidence, portfolio charts, high-risk queue, and ROI simulation.
 
-### n8n Workflow
+**1. Executive summary and vendor analysis**
 
-<!-- Replace with actual screenshot after capture -->
-![n8n vendor risk automation workflow](docs/images/n8n_workflow.png)
+![Streamlit dashboard — executive summary and DataBridge vendor analysis](Screenshots/streamlit_dashboard1.png)
 
-> Placeholder: capture the n8n canvas from `n8n/vendor_risk_workflow.example.json` showing API call, high-risk branch, Slack alert, and Google Sheets append.
+**2. Recommendation, explanation, contract evidence, and automation payload**
 
-### MLflow
+![Streamlit dashboard — source-grounded explanation and contract evidence](Screenshots/streamlit_dashboard2.png)
 
-<!-- Replace with actual screenshot after capture -->
-![MLflow experiment runs for vendor risk models](docs/images/mlflow_runs.png)
+**3. Automation payload and portfolio BI charts**
 
-> Placeholder: capture MLflow UI comparing LogisticRegression and RandomForest runs with F1, accuracy, and logged artifacts.
+![Streamlit dashboard — automation payload, spend by category, risk distribution](Screenshots/streamlit_dashboard3.png)
+
+**4. SLA breaches, pending invoice exposure, compliance, and renewal timeline**
+
+![Streamlit dashboard — SLA, invoice exposure, compliance status, renewal timeline](Screenshots/streamlit_dashboard4.png)
+
+**5. Duplicate invoice count and high-risk review queue**
+
+![Streamlit dashboard — duplicate invoices and high-risk review queue](Screenshots/streamlit_dashboard5.png)
+
+**6. High-risk queue and ROI simulation**
+
+![Streamlit dashboard — high-risk queue and ROI exposure breakdown](Screenshots/streamlit_dashboard6.png)
+
+### n8n Workflow Automation
+
+![n8n workflow canvas — FastAPI analyze, high-risk branch, Slack and Sheets](Screenshots/n8n_workflow_canvas.png)
+
+![Slack #vendor-risk-alerts channel](Screenshots/slack_alert.png)
+
+![Google Sheets VendorRisk Tracker](Screenshots/google_sheets_tracker.png)
+
+### MLOps & Drift Monitoring
+
+![Drift monitoring terminal output — feature baseline comparison](Screenshots/mlflow-terminal.png)
 
 ## Business Impact / ROI
 
@@ -362,6 +382,10 @@ Full copy-paste variants (1-line, 3-bullet, 6-bullet, LinkedIn post, GitHub desc
 **Quick 1-liner:**
 
 > Built VendorRisk Copilot, an end-to-end procurement risk platform using FastAPI, Streamlit, scikit-learn, MLflow, FAISS-based contract RAG, and LangGraph workflows to detect duplicate invoices, SLA breaches, compliance gaps, renewal risk, and estimated financial exposure.
+
+**MLOps bullet (safer wording):**
+
+> Implemented local MLOps workflow for vendor-risk modeling, comparing Logistic Regression and Random Forest models, tracking evaluation metrics, saving best-model artifacts, storing feature baselines, and adding lightweight drift monitoring.
 
 ## Additional Documentation
 
