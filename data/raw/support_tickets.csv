@@ -1,0 +1,91 @@
+ticket_id,vendor_id,created_date,severity,resolution_hours,sla_hours,status,issue_type
+TCK-2001,V001,2026-01-13,Medium,7,12,Resolved,Availability
+TCK-2002,V001,2026-02-21,High,3,6,Resolved,Integration
+TCK-2003,V001,2026-03-26,High,30,6,Resolved,Access
+TCK-2004,V001,2026-05-07,Critical,19,2,Escalated,Security Review
+TCK-2005,V002,2026-01-12,Low,14,24,Resolved,Integration
+TCK-2006,V002,2026-02-22,High,2,6,Resolved,Security Review
+TCK-2007,V002,2026-03-29,Medium,9,12,Resolved,Reporting
+TCK-2008,V002,2026-05-01,High,11,6,Resolved,Billing
+TCK-2009,V003,2026-01-15,Medium,11,12,Resolved,Data Delay
+TCK-2010,V003,2026-02-24,Low,10,24,Resolved,Security Review
+TCK-2011,V003,2026-03-30,Medium,4,12,Resolved,Reporting
+TCK-2012,V003,2026-05-04,Low,8,24,Resolved,Billing
+TCK-2013,V004,2026-01-11,Medium,7,12,Resolved,Integration
+TCK-2014,V004,2026-02-19,High,4,6,Resolved,Billing
+TCK-2015,V004,2026-03-31,Low,5,24,Resolved,Integration
+TCK-2016,V004,2026-05-01,High,9,6,Resolved,Data Delay
+TCK-2017,V005,2026-01-18,Medium,1,12,Resolved,Security Review
+TCK-2018,V005,2026-02-19,Low,15,24,Resolved,Data Delay
+TCK-2019,V005,2026-04-01,High,24,6,Resolved,Reporting
+TCK-2020,V005,2026-05-08,Critical,23,2,Escalated,Reporting
+TCK-2021,V006,2026-01-18,Medium,3,12,Resolved,Integration
+TCK-2022,V006,2026-02-23,Medium,5,12,Resolved,Reporting
+TCK-2023,V006,2026-03-28,High,3,6,Resolved,Reporting
+TCK-2024,V006,2026-05-09,Medium,11,12,Resolved,Data Delay
+TCK-2025,V007,2026-01-14,Medium,2,12,Resolved,Integration
+TCK-2026,V007,2026-02-20,Low,9,24,Resolved,Access
+TCK-2027,V007,2026-03-30,High,1,6,Resolved,Data Delay
+TCK-2028,V007,2026-05-03,Low,13,24,Resolved,Integration
+TCK-2029,V008,2026-01-12,High,2,6,Resolved,Availability
+TCK-2030,V008,2026-02-22,Medium,6,12,Resolved,Security Review
+TCK-2031,V008,2026-04-01,Medium,1,12,Resolved,Data Delay
+TCK-2032,V008,2026-05-07,High,13,6,Resolved,Availability
+TCK-2033,V009,2026-01-16,Medium,1,12,Resolved,Access
+TCK-2034,V009,2026-02-20,Medium,7,12,Resolved,Security Review
+TCK-2035,V009,2026-04-02,High,2,6,Resolved,Billing
+TCK-2036,V009,2026-05-04,Medium,7,12,Resolved,Billing
+TCK-2037,V010,2026-01-10,Medium,6,12,Resolved,Integration
+TCK-2038,V010,2026-02-22,High,2,6,Resolved,Reporting
+TCK-2039,V010,2026-04-01,Low,20,24,Resolved,Security Review
+TCK-2040,V010,2026-05-01,High,12,6,Resolved,Integration
+TCK-2041,V011,2026-01-10,Low,21,24,Resolved,Billing
+TCK-2042,V011,2026-02-18,Medium,3,12,Resolved,Availability
+TCK-2043,V011,2026-03-29,High,20,6,Resolved,Billing
+TCK-2044,V011,2026-05-06,Critical,18,2,Escalated,Reporting
+TCK-2045,V012,2026-01-16,Medium,2,12,Resolved,Billing
+TCK-2046,V012,2026-02-16,High,5,6,Resolved,Availability
+TCK-2047,V012,2026-03-30,Low,21,24,Resolved,Availability
+TCK-2048,V012,2026-05-01,High,9,6,Resolved,Reporting
+TCK-2049,V013,2026-01-10,High,2,6,Resolved,Data Delay
+TCK-2050,V013,2026-02-18,Medium,11,12,Resolved,Availability
+TCK-2051,V013,2026-03-28,Medium,5,12,Resolved,Reporting
+TCK-2052,V013,2026-05-06,Low,20,24,Resolved,Security Review
+TCK-2053,V014,2026-01-11,Low,10,24,Resolved,Availability
+TCK-2054,V014,2026-02-16,Medium,10,12,Resolved,Integration
+TCK-2055,V014,2026-03-31,High,16,6,Resolved,Security Review
+TCK-2056,V014,2026-05-04,Critical,19,2,Escalated,Reporting
+TCK-2057,V015,2026-01-11,High,1,6,Resolved,Access
+TCK-2058,V015,2026-02-24,Medium,11,12,Resolved,Access
+TCK-2059,V015,2026-03-26,High,3,6,Resolved,Availability
+TCK-2060,V015,2026-05-07,Medium,2,12,Resolved,Billing
+TCK-2061,V016,2026-01-15,High,4,6,Resolved,Integration
+TCK-2062,V016,2026-02-18,Medium,3,12,Resolved,Integration
+TCK-2063,V016,2026-04-02,High,12,6,Resolved,Reporting
+TCK-2064,V017,2026-01-18,Medium,8,12,Resolved,Billing
+TCK-2065,V017,2026-02-20,Medium,4,12,Resolved,Reporting
+TCK-2066,V017,2026-03-26,Medium,8,12,Resolved,Data Delay
+TCK-2067,V018,2026-01-17,High,5,6,Resolved,Integration
+TCK-2068,V018,2026-02-22,High,29,6,Resolved,Reporting
+TCK-2069,V018,2026-03-30,Critical,16,2,Escalated,Access
+TCK-2070,V019,2026-01-14,Medium,5,12,Resolved,Security Review
+TCK-2071,V019,2026-02-20,High,1,6,Resolved,Security Review
+TCK-2072,V019,2026-03-28,Low,8,24,Resolved,Integration
+TCK-2073,V020,2026-01-16,Medium,9,12,Resolved,Reporting
+TCK-2074,V020,2026-02-19,High,29,6,Resolved,Billing
+TCK-2075,V020,2026-03-25,Critical,17,2,Escalated,Billing
+TCK-2076,V021,2026-01-13,Medium,11,12,Resolved,Security Review
+TCK-2077,V021,2026-02-21,Medium,9,12,Resolved,Security Review
+TCK-2078,V021,2026-03-30,Medium,9,12,Resolved,Access
+TCK-2079,V022,2026-01-15,High,4,6,Resolved,Access
+TCK-2080,V022,2026-02-20,Medium,4,12,Resolved,Availability
+TCK-2081,V022,2026-03-28,High,13,6,Resolved,Security Review
+TCK-2082,V023,2026-01-12,Low,7,24,Resolved,Integration
+TCK-2083,V023,2026-02-23,High,30,6,Resolved,Security Review
+TCK-2084,V023,2026-03-29,Critical,19,2,Escalated,Data Delay
+TCK-2085,V024,2026-01-15,Low,10,24,Resolved,Availability
+TCK-2086,V024,2026-02-24,Low,9,24,Resolved,Availability
+TCK-2087,V024,2026-03-25,High,3,6,Resolved,Integration
+TCK-2088,V025,2026-01-12,High,4,6,Resolved,Availability
+TCK-2089,V025,2026-02-16,High,3,6,Resolved,Billing
+TCK-2090,V025,2026-04-01,High,9,6,Resolved,Availability

@@ -1,0 +1,22 @@
+AdBeacon Network Master Services Agreement
+
+Payment Terms
+Invoices are billed monthly in USD-equivalent currency with net 45 payment terms. Undisputed invoices must be paid by the due date, and disputed invoices require written notice with supporting purchase-order detail.
+
+SLA Obligations
+Vendor will maintain 95% service availability where applicable and acknowledge critical incidents within the contracted SLA window. Repeated SLA misses require a remediation plan and executive review.
+
+Compliance Requirements
+Vendor must maintain current compliance evidence appropriate to the service, including SOC2, insurance, privacy addenda, and data processing agreements when required. Missing or expired evidence must be remediated before renewal approval.
+
+Renewal Terms
+The contract end date is 2026-08-18. Renewal requires business-owner approval and non-renewal notice at least 30 days before expiration unless a signed order form states otherwise.
+
+Termination Rights
+Customer may terminate for uncured material breach, repeated service failures, compliance failure, insolvency, or unauthorized data use after the applicable cure period.
+
+Data Security
+Vendor must encrypt customer data in transit and at rest, enforce least-privilege access, retain audit logs, and notify the customer of material security incidents within 48 hours.
+
+Escalation Procedure
+Operational escalations start with the account manager, then move to executive sponsorship if a Severity Critical issue remains unresolved beyond the SLA window. Vendor must provide written status updates until closure.

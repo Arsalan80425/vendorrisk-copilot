@@ -1,0 +1,26 @@
+vendor_id,vendor_name,category,country,criticality,contract_start,contract_end,compliance_status,account_manager,business_owner,annual_contract_value
+V001,DataBridge Solutions,Data Processing,USA,High,2024-08-01,2026-07-20,Missing SOC2,Priya Shah,Data Engineering,820000
+V002,CloudNova Systems,Cloud Infrastructure,USA,High,2024-08-01,2027-08-31,Complete,Maya Chen,Infrastructure,1850000
+V003,Supportly India,Customer Support,India,Low,2025-01-01,2027-01-01,Complete,Arjun Mehta,Customer Operations,300000
+V004,SecurePay Gateway,Payments,USA,High,2024-05-01,2027-04-30,Complete,Daniel Ruiz,Finance,1320000
+V005,MediaTech Studio,Marketing,UK,Low,2025-02-01,2026-07-10,Incomplete,Emma Clarke,Marketing,260000
+V006,InsightOps Analytics,Analytics,USA,Medium,2024-09-01,2026-12-31,Complete,Noah Wilson,Revenue Operations,540000
+V007,CyberShield MDR,Cybersecurity,USA,High,2025-01-01,2027-01-01,Complete,Nina Patel,Security,960000
+V008,CloudScale Backup,Cloud Infrastructure,Canada,Medium,2024-03-15,2026-09-01,Expired Insurance,Leo Martin,Infrastructure,610000
+V009,MarketPulse Ads,Marketing,USA,Low,2025-04-01,2027-03-31,Complete,Olivia Green,Marketing,340000
+V010,LedgerFlow AP,Payments,USA,Medium,2024-11-01,2026-11-30,Complete,Ethan Brooks,Finance,470000
+V011,DataCleanse Pro,Data Processing,India,Medium,2025-01-15,2026-08-10,Missing DPA,Ravi Iyer,Data Engineering,390000
+V012,HelpDesk Hive,Customer Support,USA,Low,2024-12-01,2026-07-05,Complete,Sarah Miller,Customer Operations,305000
+V013,PeoplePulse HR,Analytics,USA,Medium,2025-06-01,2027-05-31,Complete,Grace Lee,People Operations,425000
+V014,AdBeacon Network,Marketing,USA,Medium,2024-07-01,2026-08-18,Expired Insurance,Liam Turner,Marketing,510000
+V015,FinTrust Audit,Data Processing,Ireland,High,2025-03-01,2027-02-28,Complete,Ava Murphy,Finance,690000
+V016,InfraWatch Observability,Cloud Infrastructure,Germany,High,2024-10-01,2026-10-15,Complete,Jonas Weber,Infrastructure,880000
+V017,BrandLift Creative,Marketing,Australia,Low,2025-07-01,2027-06-30,Complete,Chloe Evans,Marketing,215000
+V018,PayRoute Connect,Payments,Singapore,High,2024-04-01,2026-07-28,Incomplete,Wei Tan,Finance,740000
+V019,SafeHarbor GRC,Cybersecurity,USA,Medium,2025-02-15,2027-02-14,Complete,Mason Scott,Security,455000
+V020,TicketNest CX,Customer Support,Mexico,Medium,2024-06-01,2026-08-01,Missing SOC2,Sofia Garcia,Customer Operations,380000
+V021,QueryForge BI,Analytics,USA,Medium,2025-05-01,2027-04-30,Complete,Henry Adams,Revenue Operations,575000
+V022,ObjectVault Storage,Cloud Infrastructure,USA,High,2024-09-15,2026-12-15,Complete,Lily Foster,Infrastructure,990000
+V023,TrustDesk KYC,Data Processing,Netherlands,High,2024-01-10,2026-07-25,Missing DPA,Mila Janssen,Compliance,675000
+V024,ReviewRocket CX,Customer Support,USA,Low,2025-08-01,2027-07-31,Complete,Jack Young,Customer Operations,245000
+V025,CampaignWorks AI,Marketing,USA,Medium,2025-09-01,2027-08-31,Complete,Ella Brown,Marketing,430000

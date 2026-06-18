@@ -1,0 +1,1 @@
+"""VendorRisk Copilot source package."""
