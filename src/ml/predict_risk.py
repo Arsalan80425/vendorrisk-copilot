@@ -108,6 +108,24 @@ def recommended_action(level: str, factors: list[str]) -> str:
     return "Continue standard monitoring and refresh vendor evidence at the next review cycle."
 
 
+def _rule_based_prediction(row: pd.Series) -> dict[str, Any]:
+    """Fallback scorer using deterministic rule features when ML artifacts are unavailable."""
+    risk_score = round(float(row.get("risk_score_rule", 0)) / 100, 4)
+    level = risk_level(risk_score)
+    factors = top_risk_factors(row)
+    exposure = estimate_financial_exposure(row, level)
+    return {
+        "vendor_id": str(row["vendor_id"]),
+        "vendor_name": str(row["vendor_name"]),
+        "model_name": "rule_based",
+        "risk_score": risk_score,
+        "risk_level": level,
+        "top_risk_factors": factors,
+        "recommended_action": recommended_action(level, factors),
+        "estimated_financial_exposure": exposure,
+    }
+
+
 def predict_vendor(vendor_id: str) -> dict[str, Any]:
     """Score one vendor and return a JSON-serializable risk result."""
     features = load_features()
@@ -117,21 +135,24 @@ def predict_vendor(vendor_id: str) -> dict[str, Any]:
         raise KeyError(f"Unknown vendor_id '{vendor_id}'. Known vendors: {known}")
 
     row = matches.iloc[0]
-    model, feature_names, model_name = load_model_artifacts()
-    risk_score = predict_risk_score(model, _row_to_model_frame(row, feature_names))
-    level = risk_level(risk_score)
-    factors = top_risk_factors(row)
-    exposure = estimate_financial_exposure(row, level)
-    return {
-        "vendor_id": str(row["vendor_id"]),
-        "vendor_name": str(row["vendor_name"]),
-        "model_name": model_name,
-        "risk_score": risk_score,
-        "risk_level": level,
-        "top_risk_factors": factors,
-        "recommended_action": recommended_action(level, factors),
-        "estimated_financial_exposure": exposure,
-    }
+    try:
+        model, feature_names, model_name = load_model_artifacts()
+        risk_score = predict_risk_score(model, _row_to_model_frame(row, feature_names))
+        level = risk_level(risk_score)
+        factors = top_risk_factors(row)
+        exposure = estimate_financial_exposure(row, level)
+        return {
+            "vendor_id": str(row["vendor_id"]),
+            "vendor_name": str(row["vendor_name"]),
+            "model_name": model_name,
+            "risk_score": risk_score,
+            "risk_level": level,
+            "top_risk_factors": factors,
+            "recommended_action": recommended_action(level, factors),
+            "estimated_financial_exposure": exposure,
+        }
+    except Exception:
+        return _rule_based_prediction(row)
 
 
 def score_vendor(vendor_id: str) -> dict[str, object]:

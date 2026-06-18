@@ -93,7 +93,7 @@ def predict_vendor_risk(state: VendorRiskState) -> VendorRiskState:
 
 def retrieve_contract_evidence(state: VendorRiskState) -> VendorRiskState:
     """Retrieve contract clauses relevant to the vendor risk factors."""
-    if state["errors"]:
+    if state["risk_score"] is None:
         return state
     try:
         query = " ".join(state["top_risk_factors"]) or "vendor risk contract obligations"
@@ -104,12 +104,13 @@ def retrieve_contract_evidence(state: VendorRiskState) -> VendorRiskState:
         )
     except Exception as exc:
         state["errors"].append(f"Contract retrieval failed: {exc}")
+        state["retrieved_contract_evidence"] = []
     return state
 
 
 def generate_explanation(state: VendorRiskState) -> VendorRiskState:
     """Generate a deterministic source-grounded explanation from retrieved clauses."""
-    if state["errors"]:
+    if state["risk_score"] is None:
         return state
     state["explanation"] = generate_contract_evidence_summary(
         vendor_name=state["vendor_name"] or state["vendor_id"],
@@ -121,7 +122,7 @@ def generate_explanation(state: VendorRiskState) -> VendorRiskState:
 
 def decide_procurement_action(state: VendorRiskState) -> VendorRiskState:
     """Choose the procurement action from the final risk level."""
-    if state["errors"]:
+    if state["risk_score"] is None:
         return state
     if state["risk_level"] == "High":
         state["recommended_action"] = "Escalate to procurement manager and block approval until review"
@@ -137,7 +138,7 @@ def decide_procurement_action(state: VendorRiskState) -> VendorRiskState:
 
 def prepare_automation_payload(state: VendorRiskState) -> VendorRiskState:
     """Create a workflow payload suitable for n8n or another external orchestrator."""
-    if state["errors"]:
+    if state["risk_score"] is None:
         return state
     features = state["features"] or {}
     state["automation_payload"] = {

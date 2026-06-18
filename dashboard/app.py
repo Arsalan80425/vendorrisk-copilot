@@ -105,6 +105,15 @@ def money(value: float | int | None) -> str:
     return f"${float(value or 0):,.0f}"
 
 
+def analysis_is_usable(analysis: dict[str, Any] | None) -> bool:
+    """Return True when analysis contains the minimum fields needed by the dashboard."""
+    return (
+        isinstance(analysis, dict)
+        and analysis.get("risk_score") is not None
+        and analysis.get("risk_level") is not None
+    )
+
+
 def with_risk_level(features: pd.DataFrame) -> pd.DataFrame:
     """Attach dashboard risk levels based on probability-style thresholds."""
     enriched = features.copy()
@@ -153,30 +162,41 @@ selected_vendor_id = selected_vendor.split(" — ")[0]
 
 if st.button("Analyze Vendor", type="primary"):
     analysis = api_analyze_vendor(selected_vendor_id)
-    source = "FastAPI" if analysis else "local workflow"
-    if analysis is None:
+    source = "FastAPI" if analysis_is_usable(analysis) else "local workflow"
+    if not analysis_is_usable(analysis):
         analysis = local_analyze_vendor(selected_vendor_id)
+
+    errors = analysis.get("errors") or []
+    if errors:
+        st.warning("Analysis completed with issues: " + "; ".join(errors))
+
+    if not analysis_is_usable(analysis):
+        st.error("Could not compute a risk score for this vendor. Check that processed features and model artifacts are available.")
+        st.stop()
 
     st.subheader(f"Analysis from {source}")
     metric_cols = st.columns(4)
     metric_cols[0].metric("Risk score", f"{float(analysis['risk_score']):.2f}")
-    metric_cols[1].metric("Risk level", analysis["risk_level"])
-    metric_cols[2].metric("Financial exposure", money(analysis["estimated_financial_exposure"]))
-    metric_cols[3].metric("Human review", "Required" if analysis["human_review_required"] else "Not required")
+    metric_cols[1].metric("Risk level", str(analysis["risk_level"]))
+    metric_cols[2].metric("Financial exposure", money(analysis.get("estimated_financial_exposure")))
+    metric_cols[3].metric(
+        "Human review",
+        "Required" if analysis.get("human_review_required") else "Not required",
+    )
 
     st.write("Top risk factors")
-    st.write(analysis["top_risk_factors"])
+    st.write(analysis.get("top_risk_factors") or [])
     st.write("Recommendation")
-    st.info(analysis["recommended_action"])
+    st.info(analysis.get("recommended_action") or "No recommendation generated.")
     st.write("Source-grounded explanation")
     st.write(analysis.get("explanation") or "No explanation generated.")
 
     st.write("Contract evidence")
-    evidence = pd.DataFrame(analysis["retrieved_contract_evidence"])
+    evidence = pd.DataFrame(analysis.get("retrieved_contract_evidence") or [])
     st.dataframe(evidence, use_container_width=True, hide_index=True)
 
     st.write("Automation payload")
-    st.json(analysis["automation_payload"])
+    st.json(analysis.get("automation_payload") or {})
 
 st.header("BI Charts")
 chart_col_1, chart_col_2 = st.columns(2)
