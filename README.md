@@ -375,18 +375,6 @@ Example executive framing:
 - AuthN/AuthZ, audit logging, and tenant-scoped artifact storage
 - Model registry promotion workflow in MLflow with champion/challenger deployment
 
-## Resume Bullets
-
-Full copy-paste variants (1-line, 3-bullet, 6-bullet, LinkedIn post, GitHub description) are in [docs/resume_bullets.md](docs/resume_bullets.md).
-
-**Quick 1-liner:**
-
-> Built VendorRisk Copilot, an end-to-end procurement risk platform using FastAPI, Streamlit, scikit-learn, MLflow, FAISS-based contract RAG, and LangGraph workflows to detect duplicate invoices, SLA breaches, compliance gaps, renewal risk, and estimated financial exposure.
-
-**MLOps bullet (safer wording):**
-
-> Implemented local MLOps workflow for vendor-risk modeling, comparing Logistic Regression and Random Forest models, tracking evaluation metrics, saving best-model artifacts, storing feature baselines, and adding lightweight drift monitoring.
-
 ## Additional Documentation
 
 | Document | Purpose |
